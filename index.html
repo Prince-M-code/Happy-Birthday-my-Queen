@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Birthday Wishes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="birthday-card">
+            <h1 class="title">Happy Birthday</h1>
+            <h2 class="subtitle">to the Birthday Queen</h2>
+            
+            <div class="camera-section">
+                <button id="cameraButton" class="royal-button">Take a Birthday Photo</button>
+                <video id="video" style="display: none;"></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+                <div id="photoContainer" class="photo-container">
+                    <img id="capturedPhoto" style="display: none;">
+                </div>
+            </div>
+
+            <div class="wishes">
+                <p>On this special day, may your life be filled with</p>
+                <ul class="wishes-list">
+                    <li>✨ Joy and Laughter</li>
+                    <li>👑 Grace and Splendor</li>
+                    <li>💝 Love and Happiness</li>
+                    <li>⭐ Dreams and Success</li>
+                </ul>
+                <p class="signature">With warmest wishes on your special day!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

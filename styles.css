@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.birthday-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.birthday-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #ffd700, #ff7b00, #ffd700);
+}
+
+.title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.royal-button {
+    background: linear-gradient(135deg, #ffd700, #ff7b00);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.royal-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.photo-container {
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#capturedPhoto {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.wishes {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.wishes p {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.wishes-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.wishes-list li {
+    font-size: 1.1em;
+    color: #34495e;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.wishes-list li:hover {
+    transform: scale(1.02);
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .birthday-card {
+        padding: 20px;
+    }
+    
+    .title {
+        font-size: 3em;
+    }
+    
+    .subtitle {
+        font-size: 1.2em;
+    }
+} 
